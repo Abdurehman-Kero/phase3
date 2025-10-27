@@ -1,12 +1,13 @@
 import flag from "../../assets/images/icons/16.png";
-// import styles from "./Footer.module.css";
-import AccordionHandler from "../../AccordionHandler";
+import styles from "./Footer.module.css";
+import AccordionHandler from "./AccordionHandler";
 const Footer = () => {
   return (
-    <footer className="footer-wrapper">
+    <footer className={styles["footer-wrapper"]}>
       <AccordionHandler />
       <div className="container">
-        <div className="upper-text-container">
+        footer-wrapper
+        <div className={styles["upper-text-container"]}>
           <p>
             1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro
             promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X
@@ -16,7 +17,7 @@ const Footer = () => {
             any Trade In transaction for any reason. In‑store trade‑in requires
             presentation of a valid, government-issued photo ID (local law may
             require saving this information). Sales tax may be assessed on full
-            value of new iPhone. Additional terms from Apple or Apple’s trade-in
+            value of new iPhone. Additional terms from Apple or Apple's trade-in
             partners may apply. Monthly pricing: Available to qualified
             customers and requires 0% APR, 24-month installment loan with
             Citizens One or Apple Card Monthly Installments and iPhone
@@ -50,7 +51,9 @@ const Footer = () => {
             and other <a href="https://www.apple.com/promo/">terms </a> apply.
           </p>
         </div>
-        <div className="footer-links-wrapper row">
+        <div
+          className={`${styles["footer-links-wrapper"]} footer-links-wrapper row`}
+        >
           <div className="links-wrapper-1  col-sm-12 col-md links1">
             <h3 onclick="toshow()" className="h33">
               Shop and Learn
@@ -250,15 +253,19 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="my-apple-wrapper">
+        <div className={styles["my-apple-wrapper"]}>
           More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
           <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
         </div>
         <div className="copyright-wrapper row">
-          <div className="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
+          <div
+            className={`${styles.copyright} col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1`}
+          >
             Copyright &copy; 2020 Apple Inc. All rights reserved.
           </div>
-          <div className="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
+          <div
+            className={`${styles["footer-links-terms"]} col-sm-12 order-3 col-lg-6 order-lg-2`}
+          >
             <ul>
               <li>
                 <a href="#">Privacy Policy</a>
@@ -277,11 +284,13 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
-            <div className="flag-wrapper">
+          <div
+            className={`${styles["footer-country"]} col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3`}
+          >
+            <div className={styles["flag-wrapper"]}>
               <img src={flag} />
             </div>{" "}
-            <div className="footer-country-name">United States</div>
+            <div className={styles["footer-country-name"]}>United States</div>
           </div>
         </div>
       </div>
