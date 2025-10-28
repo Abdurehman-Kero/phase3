@@ -1,21 +1,23 @@
- 
-import "../../../assets/css/styles.css";
+import styles from "./SectionThree.module.css";
+
 const SectionThree = () => {
   return (
     <>
-      <section className="third-hightlight-wrapper">
+      <section className={styles["third-hightlight-wrapper"]}>
         <div className="container">
-          <div className="title-wraper bold">iPhone 11 Pro</div>
+          <div className={`${styles["title-wraper"]} ${styles["bold"]}`}>
+            iPhone 11 Pro
+          </div>
 
-          <div className="description-wrapper">
+          <div className={styles["description-wrapper"]}>
             Pro cameras. Pro display. Pro performance.
           </div>
 
-          <div className="price-wrapper">
+          <div className={styles["price-wrapper"]}>
             From $24.95/mo. or $599 with trade‑in.
           </div>
 
-          <div className="links-wrapper">
+          <div className={styles["links-wrapper"]}>
             <ul>
               <li>
                 <a href="">Learn more</a>
@@ -29,6 +31,6 @@ const SectionThree = () => {
       </section>
     </>
   );
-}
+};
 
-export default SectionThree
+export default SectionThree;

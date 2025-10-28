@@ -1,6 +1,5 @@
 import $ from "jquery";
-import React, { useEffect } from "react";
-
+import React, { useEffect } from "react"; 
 const AccordionHandler = () => {
   useEffect(() => {
     $(function () {

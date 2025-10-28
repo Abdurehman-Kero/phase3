@@ -3,6 +3,10 @@
   background: rgba(0,0,0,0.8);
   font-size: 0.85em;
   font-weight: 200;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-wrapper ul li a {

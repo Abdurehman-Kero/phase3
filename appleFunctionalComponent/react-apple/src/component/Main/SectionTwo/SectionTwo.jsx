@@ -1,21 +1,23 @@
- 
-import "../../../assets/css/styles.css";
+import styles from "./SectionTwo.module.css";
+
 const SectionTwo = () => {
   return (
     <>
-      <section className="second-hightlight-wrapper">
+      <section className={styles["second-hightlight-wrapper"]}>
         <div className="container">
-          <div className="new-alert">New</div>
+          <div className={styles["new-alert"]}>New</div>
 
-          <div className="title-wraper bold black">MacBook Air</div>
+          <div className={`${styles["title-wraper"]} ${styles["bold"]} black`}>
+            MacBook Air
+          </div>
 
-          <div className="description-wrapper black">
+          <div className={`${styles["description-wrapper"]} black`}>
             Twice the speed. Twice the storage.
           </div>
 
-          <div className="price-wrapper grey">From $999.</div>
+          <div className={`${styles["price-wrapper"]} grey`}>From $999.</div>
 
-          <div className="links-wrapper">
+          <div className={styles["links-wrapper"]}>
             <ul>
               <li>
                 <a href="">Learn more</a>
@@ -26,9 +28,9 @@ const SectionTwo = () => {
             </ul>
           </div>
         </div>
-      </section> 
+      </section>
     </>
   );
-}
+};
 
-export default SectionTwo
+export default SectionTwo;
