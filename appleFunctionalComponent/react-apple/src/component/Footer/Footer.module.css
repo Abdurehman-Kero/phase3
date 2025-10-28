@@ -1,0 +1,125 @@
+.footerWrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 0.7em;
+}
+
+.upperTextContainer {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 17px 0 10px;
+  margin-bottom: 20px;
+}
+
+.upperTextContainer a {
+  color: #515154;
+}
+
+.footerLinksWrapper {
+  padding-bottom: 10px;
+}
+
+.footerLinksWrapper ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.footerLinksWrapper ul li {
+  padding: 4px 0;
+}
+
+.footerLinksWrapper h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+  cursor: pointer;
+  position: relative;
+}
+
+.footerLinksWrapper h3 .icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.footerLinksWrapper h3 .icon::after {
+  content: "+";
+}
+
+.footerLinksWrapper h3 .icon.iconRotator::after {
+  content: "×";
+}
+
+.footerLinksWrapper ul a {
+  color: #515154;
+  text-decoration: none;
+}
+
+.footerLinksWrapper ul a:hover {
+  color: #000;
+}
+
+.myAppleWrapper {
+  padding-bottom: 15px;
+  margin-top: 10px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.copyrightWrapper {
+  margin-top: 15px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.footerLinksTerms ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerLinksTerms ul li {
+  padding: 0 10px;
+  border-right: 1px solid #d2d2d7;
+}
+
+.footerLinksTerms ul li:first-child {
+  padding-left: 0;
+}
+
+.footerLinksTerms ul li:last-child {
+  border-right: 0;
+}
+
+.footerCountry {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.flagWrapper img {
+  width: 16px;
+  height: auto;
+}
+
+.footerCountryName {
+  display: inline-block;
+}
+
+/* Mobile Accordion */
+@media (max-width: 768px) {
+  .footerLinksWrapper ul {
+    display: none;
+  }
+
+  .footerLinksWrapper h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+}
